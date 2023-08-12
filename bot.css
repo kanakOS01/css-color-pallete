@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+:root {
+
+    --pure-black: #121212;
+    --pure-white: #ffffff;
+    
+    /* DARK THEME COLORS */
+    --bg-dark-primary: #202020;
+    --bg-dark-overlay: rgb(41, 41, 41);
+    
+    --text-dark-active: #ffffff;
+    --text-dark-inactive: #bbbbbb;
+    
+    --teal-secondary: #03DAC5;
+    
+    --purple-primary: #af74f7;
+
+    --blue-primary: #3700B3;
+    --blue-bright: #007be0;
+    
+    --red-error: #cc3045;
+    --red-bright: red;
+
+    /* LIGHT THEMES COLORS */
+    --bg-light-primary: #EEEEEE;
+    --bg-light-overlay: #e4e4e4;
+
+    --text-light-active: #000000;
+    --text-light-inactive: #3b3b3b;
+
+
+    /* TRANSITIONS */
+    --transition: all 0.3s ease-in-out;
+
+    
+    /* FONT */
+    --regular: 600;
+    --thin: 400;
+    --bold: 900;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.1rem;
+    font-weight: var(--regular);
+}
+
+.bot-dark {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--bg-dark-primary);
+    color: var(--text-dark-active);
+    /* padding: 2rem; */
+}
+
+.bot-light {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--bg-light-primary);
+    color: var(--text-light-active);
+    /* padding: 2rem; */
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-dark {
+    height: 280px;
+    width: 280px;
+    background-color: var(--bg-dark-overlay);
+    margin: 2rem;
+    box-shadow: 0 0 10px var(--bg-dark-overlay);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.container-light {
+    height: 280px;
+    width: 280px;
+    background-color: var(--bg-light-overlay);
+    margin: 2rem;
+    box-shadow: 0 0 10px var(--bg-light-overlay);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/* BACKGROUND CSS STARTS HERE */
+
+.bg-blue {
+    background-color: var(--blue-primary);
+}
+
+.bg-purple {
+    background-color: var(--purple-primary);
+}
+
+.bg-teal {
+    background-color: var(--teal-secondary);
+}
+
+.bg-red {
+    background-color: var(--red-error);
+}
+
+/* BACKGROUND CSS ENDS HERE */
+
+
+/* TEXT CSS STARTS HERE */
+
+.text-blue {
+    color: var(--blue-bright);
+}
+
+.text-purple {
+    color: var(--purple-primary);
+}
+
+.text-teal {
+    color: var(--teal-secondary);
+}
+
+.text-light {
+    color: var(--text-dark-active);
+}
+
+.text-dark {
+    color: var(--text-light-active);
+}
+
+.text-red {
+    color: var(--red-bright);
+}
+
+.active-dark {
+    color: var(--text-dark-active);
+}
+
+.inactive-dark {
+    color: var(--text-dark-inactive);
+    font-weight: var(--thin);
+}
+
+.active-light {
+    color: var(--text-light-active);
+}
+
+.inactive-light {
+    color: var(--text-light-inactive);
+    font-weight: var(--thin);
+}
+
+/* TEXT CSS ENDS HERE */
+
